@@ -2040,7 +2040,7 @@ static PyObject *pa_get_stream_cpu_load(PyObject *self, PyObject *args) {
 
 static PyObject *pa_write_stream(PyObject *self, PyObject *args) {
   const char *data;
-  int total_size;
+  Py_ssize_t total_size;
   int total_frames;
   int err;
   int should_throw_exception = 0;
